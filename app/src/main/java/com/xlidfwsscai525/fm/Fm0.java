@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -80,6 +81,12 @@ public class Fm0 extends BaseFm {
 
     class FmComCb extends ComCb<KaiJiangEntity> {
         @Override
+        public void onFinished() {
+            super.onFinished();
+            dismissProgressDialog();
+        }
+
+        @Override
         public void onSuccess(final KaiJiangEntity result) {
             super.onSuccess(result);
             setFmComCb(result);
@@ -103,9 +110,17 @@ public class Fm0 extends BaseFm {
             long l2 = l1 - l;
             XgoLog.e("l2:" + l2);//l2/1000*/
             recLen = result.items.next.interval/1000;//(l2 / 1000);
-            timer.schedule(task, 1000, 1000);
-            dismissProgressDialog();
-
+            if (recLen < 0)
+            {
+                showProgressDailog("正在开奖中，请稍等");
+                showRingToneToast();
+                CM.getInstance().kaijiang(new FmComCb());
+            }else {
+                timer.schedule(task, 1000, 1000);
+                mMediaPlayer.stop();
+                vibrator.cancel();
+                m_Manager.cancelAll();
+            }
     }
 
     Timer timer = new Timer();
@@ -129,22 +144,35 @@ public class Fm0 extends BaseFm {
                 case 1:
                     long  min = recLen/60;
                     long  sec = recLen - min*60;
-                    if (recLen > 0) {
-                        m_time.setText("" + min + ":" + sec);
+                    String minStr = "";
+                    String secStr = "";
+                    if (min > 10){
+                        minStr = "" + min;
                     }else{
-                        m_time.setText("请求网络中");
+                        minStr = "0" + min;
                     }
-                    System.out.println( min + ":" + sec);
-                    if (recLen >0 && recLen  < 5) {
-                        showProgressDailog();
+                    if (sec > 10)
+                    {
+                        secStr = "" + sec;
+                    }else{
+                        secStr = "0" + sec;
+                    }
+
+
+
+                    if (recLen > 0) {
+                        m_time.setText("" + minStr + ":" + secStr);
+                    }else{
+                        m_time.setText("00:00");
                         CM.getInstance().kaijiang(new FmComCb());
+                        break;
                     }
                     break;
             }
         }
     };
 
-    public void showToast() {
+    public void showRingToneToast() {
         // 使用来电铃声的铃声路径
         // 如果为空，才构造，不为空，说明之前有构造过
         try {
@@ -154,6 +182,9 @@ public class Fm0 extends BaseFm {
             }
             mMediaPlayer.setDataSource(getContext(), uri);
             mMediaPlayer.setLooping(true); //循环播放
+            AssetFileDescriptor fileDescriptor = getActivity().getAssets().openFd("zhongjiangle.mp3");
+            mMediaPlayer.setDataSource(fileDescriptor.getFileDescriptor(),fileDescriptor.getStartOffset(),
+                    fileDescriptor.getStartOffset());
             mMediaPlayer.prepare();
             mMediaPlayer.start();
             vibrator = (Vibrator) getContext().getSystemService(getContext().VIBRATOR_SERVICE);
@@ -185,8 +216,15 @@ public class Fm0 extends BaseFm {
         }
     }
 
-    @Event({R.id.ll_00, R.id.ll_01, R.id.ll_02, R.id.ll_03,
-            R.id.ll_plan, R.id.ll_cbsc, R.id.ll_knowledge, R.id.ll_donar, R.id.ll_news})
+    @Event({R.id.ll_00,
+            R.id.ll_01,
+            R.id.ll_02,
+            R.id.ll_03,
+            R.id.ll_plan,
+            R.id.ll_cbsc,
+            R.id.ll_knowledge,
+            R.id.ll_donar,
+            R.id.ll_news})
     private void OnFm0OnClick(View v) {
 
         switch (v.getId()) {
@@ -194,12 +232,15 @@ public class Fm0 extends BaseFm {
                 startActivity(new Intent(getActivity(), TwoStartAct.class));
                 break;
             case R.id.ll_01:
-                startActivity(new Intent(getActivity(), NewsAct.class));
+                MainActivity m = (MainActivity) getActivity();
+                m.setCurrent(1);
                 break;
             case R.id.ll_02:
-                startActivity(new Intent(getActivity(), LottoTrendActivity.class));
+                MainActivity m2 = (MainActivity) getActivity();
+                m2.setCurrent(4);
                 break;
             case R.id.ll_03:
+                startActivity(new Intent(getActivity(), LottoTrendActivity.class));
                 break;
             case R.id.ll_plan:
                 startActivity(new Intent(getActivity(), PlanAct.class));
@@ -218,6 +259,5 @@ public class Fm0 extends BaseFm {
                 startActivity(new Intent(getActivity(), NewsAct.class));
                 break;
         }
-
     }
 }

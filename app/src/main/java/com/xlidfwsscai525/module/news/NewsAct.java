@@ -46,7 +46,7 @@ public class NewsAct extends BaseListAct<NewsEntity> {
 
     @Override
     protected boolean isSwipeRefreshLayoutEnabled() {
-        return false;
+        return true;
     }
 
     @Override

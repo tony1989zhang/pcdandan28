@@ -14,8 +14,6 @@ import android.view.ViewGroup;
 import android.widget.ScrollView;
 
 /**
- * Created by Administrator on 2017/3/14 0014.
- * E-Mail：543441727@qq.com
  */
 
 public class ZoomInScrollView extends ScrollView {

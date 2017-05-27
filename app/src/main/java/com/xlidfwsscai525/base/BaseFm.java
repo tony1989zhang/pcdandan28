@@ -58,7 +58,7 @@ public class BaseFm extends Fragment {
     public void showProgressDialog(String strMessage, boolean isCancelAble) {
 
         if (null == mProgress) {
-            return;
+            mProgress = CProDlg.createDialog(getActivity());
         }
 
         if (isCancelAble) {

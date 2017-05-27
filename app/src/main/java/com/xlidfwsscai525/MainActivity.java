@@ -1,6 +1,5 @@
 package com.xlidfwsscai525;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -20,8 +19,6 @@ import com.xlidfwsscai525.fm.Fm2;
 import com.xlidfwsscai525.fm.Fm3;
 import com.xlidfwsscai525.fm.Fm4;
 import com.xlidfwsscai525.http.CM;
-import com.xlidfwsscai525.module.plan.PlanAct;
-import com.xlidfwsscai525.module.suoshui.*;
 import com.xlidfwsscai525.view.BanSlidingViewPage;
 import com.xlidfwsscai525.view.TitleView;
 
@@ -85,7 +82,7 @@ public class MainActivity extends BaseFmAct {
         m_banSlidingView.setOffscreenPageLimit(0);
         m_banSlidingView.setCurrentItem(currentIndex);
         m_banSlidingView.setScanScroll(false);
-        iv0.setImageResource(R.drawable.tab_found_red);
+        iv0.setImageResource(R.drawable.tab_found_on);
         tv0.setTextColor(getResources().getColor(R.color.title_red));
         //m_tv_quote.setTextColor(getResources().getColor(R.color.swipe_refrsh_color3));
         setupDrawerContent();
@@ -152,67 +149,67 @@ public class MainActivity extends BaseFmAct {
         switch (v.getId()) {
             case R.id.ll0:
                 currentIndex = 0;
-                iv0.setImageResource(R.drawable.tab_found_red);
+                iv0.setImageResource(R.drawable.tab_found_on);
                 tv0.setTextColor(getResources().getColor(R.color.title_red));
-                iv1.setImageResource(R.mipmap.mainnav_icon01);
-                tv1.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv2.setImageResource(R.mipmap.mainnav_icon05);
-                tv2.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv3.setImageResource(R.mipmap.mainnav_icon07);
-                tv3.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv4.setImageResource(R.mipmap.mainnav_icon06);
-                tv4.setTextColor(getResources().getColor(R.color.text_default_color));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
                 break;
             case R.id.ll1:
                 currentIndex = 1;
-                iv0.setImageResource(R.drawable.tab_found);
-                tv0.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv1.setImageResource(R.mipmap.mainnav_icon01_on);
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_on);
                 tv1.setTextColor(getResources().getColor(R.color.title_red));
-                iv2.setImageResource(R.mipmap.mainnav_icon05);
-                tv2.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv3.setImageResource(R.mipmap.mainnav_icon07);
-                tv3.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv4.setImageResource(R.mipmap.mainnav_icon06);
-                tv4.setTextColor(getResources().getColor(R.color.text_default_color));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
                 break;
             case R.id.ll2:
                 currentIndex = 2;
-                iv0.setImageResource(R.drawable.tab_found);
-                tv0.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv1.setImageResource(R.mipmap.mainnav_icon01);
-                tv1.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv2.setImageResource(R.mipmap.mainnav_icon05_on);
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_on);
                 tv2.setTextColor(getResources().getColor(R.color.title_red));
-                iv3.setImageResource(R.mipmap.mainnav_icon07);
-                tv3.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv4.setImageResource(R.mipmap.mainnav_icon06);
-                tv4.setTextColor(getResources().getColor(R.color.text_default_color));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
                 break;
             case R.id.ll3:
                 currentIndex = 3;
-                iv0.setImageResource(R.drawable.tab_found);
-                tv0.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv1.setImageResource(R.mipmap.mainnav_icon01);
-                tv1.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv2.setImageResource(R.mipmap.mainnav_icon05);
-                tv2.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv3.setImageResource(R.mipmap.mainnav_icon07_on);
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_on);
                 tv3.setTextColor(getResources().getColor(R.color.title_red));
-                iv4.setImageResource(R.mipmap.mainnav_icon06);
-                tv4.setTextColor(getResources().getColor(R.color.text_default_color));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
                 break;
             case R.id.ll4:
                 currentIndex = 4;
-                iv0.setImageResource(R.drawable.tab_found);
-                tv0.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv1.setImageResource(R.mipmap.mainnav_icon01);
-                tv1.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv2.setImageResource(R.mipmap.mainnav_icon05);
-                tv2.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv3.setImageResource(R.mipmap.mainnav_icon07);
-                tv3.setTextColor(getResources().getColor(R.color.text_default_color));
-                iv4.setImageResource(R.mipmap.mainnav_icon06_on);
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_on);
                 tv4.setTextColor(getResources().getColor(R.color.title_red));
                 break;
             case R.id.title_back:
@@ -220,6 +217,74 @@ public class MainActivity extends BaseFmAct {
                 break;
         }
        // ToastManager.getManager().show("" +  currentIndex);
+        m_banSlidingView.setCurrentItem(currentIndex);
+    }
+
+    public void setCurrent(int currentIndex)
+    {    this.currentIndex = currentIndex;
+        switch (currentIndex) {
+            case 0:
+                iv0.setImageResource(R.drawable.tab_found_on);
+                tv0.setTextColor(getResources().getColor(R.color.title_red));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case 1:
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_on);
+                tv1.setTextColor(getResources().getColor(R.color.title_red));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case 2:
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_on);
+                tv2.setTextColor(getResources().getColor(R.color.title_red));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case 3:
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_on);
+                tv3.setTextColor(getResources().getColor(R.color.title_red));
+                iv4.setImageResource(R.drawable.tab_5_off);
+                tv4.setTextColor(getResources().getColor(R.color.white));
+                break;
+            case 4:
+                iv0.setImageResource(R.drawable.tab_found_off);
+                tv0.setTextColor(getResources().getColor(R.color.white));
+                iv1.setImageResource(R.drawable.tab_2_off);
+                tv1.setTextColor(getResources().getColor(R.color.white));
+                iv2.setImageResource(R.drawable.tab_3_off);
+                tv2.setTextColor(getResources().getColor(R.color.white));
+                iv3.setImageResource(R.drawable.tab_4_off);
+                tv3.setTextColor(getResources().getColor(R.color.white));
+                iv4.setImageResource(R.drawable.tab_5_on);
+                tv4.setTextColor(getResources().getColor(R.color.title_red));
+                break;
+        }
+        // ToastManager.getManager().show("" +  currentIndex);
         m_banSlidingView.setCurrentItem(currentIndex);
     }
 

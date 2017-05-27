@@ -135,7 +135,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/random3" />
+                    android:src="@drawable/icon_openj" />
 
                 <TextView
                     style="@style/layout_fm0_tv"
@@ -154,7 +154,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/random4" />
+                    android:src="@drawable/icon_lengre" />
 
                 <TextView
                     style="@style/layout_fm0_tv"
@@ -179,7 +179,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/random5" />
+                    android:src="@drawable/icon_num_tj" />
 
                 <TextView
                     style="@style/layout_fm0_tv"

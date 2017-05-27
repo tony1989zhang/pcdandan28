@@ -27,7 +27,7 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:orientation="horizontal"
-        android:background="@color/swipe_refrsh_color3"
+        android:background="@drawable/repeat_tab_bg"
     android:weightSum="5"
     >
         <LinearLayout
@@ -43,7 +43,7 @@
                 android:id="@+id/iv0"
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
-                android:src="@drawable/tab_found"
+                android:src="@drawable/tab_found_off"
                 />
             <TextView
                 android:id="@+id/tv0"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:gravity="center"
-                android:textColor="@color/text_default_color"
+                android:textColor="@color/white"
                 android:text="助手"
                 />
         </LinearLayout>
@@ -68,7 +68,7 @@
             android:id="@+id/iv1"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:src="@mipmap/mainnav_icon01"
+            android:src="@drawable/tab_2_off"
             />
         <TextView
             android:id="@+id/tv1"
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:gravity="center"
-            android:textColor="@color/text_default_color"
+            android:textColor="@color/white"
             android:text="开奖查询"
             />
         </LinearLayout>
@@ -92,7 +92,7 @@
             android:id="@+id/iv2"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:src="@mipmap/mainnav_icon05"
+            android:src="@drawable/tab_3_off"
             />
         <TextView
             android:id="@+id/tv2"
@@ -101,7 +101,7 @@
             android:textSize="12sp"
             android:gravity="center"
             android:text="两面长龙"
-            android:textColor="@color/text_default_color"
+            android:textColor="@color/white"
             />
         </LinearLayout>
     <LinearLayout
@@ -116,7 +116,7 @@
             android:id="@+id/iv3"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:src="@mipmap/mainnav_icon07"
+            android:src="@drawable/tab_4_off"
             />
         <TextView
             android:id="@+id/tv3"
@@ -125,7 +125,7 @@
             android:textSize="12sp"
             android:gravity="center"
             android:text="数据统计"
-            android:textColor="@color/text_default_color"
+            android:textColor="@color/white"
             />
         </LinearLayout>
     <LinearLayout
@@ -140,8 +140,8 @@
             android:id="@+id/iv4"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:src="@mipmap/mainnav_icon06"
-            android:textColor="@color/text_default_color"
+            android:src="@drawable/tab_5_off"
+            android:textColor="@color/white"
             />
         <TextView
             android:id="@+id/tv4"
@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:gravity="center"
-            android:textColor="@color/text_default_color"
+            android:textColor="@color/white"
             android:text="冷热分析"
             />
         </LinearLayout>
