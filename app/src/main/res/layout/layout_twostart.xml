@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xlidfwsscai525.view.TitleView
+        android:layout_width="wrap_content"
+        android:id="@+id/title_view"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iclude_2"
+        android:layout_below="@+id/title_view"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/layout_twostartbase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/layout_twostartone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/layout_twostarttwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="8">
+
+                <TextView
+                    style="@style/tv_title_twostart"
+                    android:text="大小过滤" />
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="2px"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.xlidfwsscai525.module.suoshui.CheckBoxTagViewGroup2
+                        android:id="@+id/checkbox_tags_bigorsmail"
+                        style="@style/vg_twostart" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_title_twostart"
+                    android:text="奇偶过滤" />
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="2px"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.xlidfwsscai525.module.suoshui.CheckBoxTagViewGroup2
+                        android:id="@+id/checkbox_tags_oddoreven"
+                        style="@style/vg_twostart" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_tj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="点击 底部 【条件预览】按钮，生成选号预览" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/black"
+        />
+    <include
+        android:id="@+id/iclude_2"
+        layout="@layout/include_twostart_suoshui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

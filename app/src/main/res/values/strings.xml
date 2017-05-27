@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PC蛋蛋28s</string>
+    <string name="network_not_connection">网络错误</string>
+    <string name="add_tag">add_tag</string>
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="two_start_suoshui"><u>缩水教程</u></string>
+    <string name="layout_fm0_tv_title_00">二星</string>
+    <string name="layout_fm0_tv_text_00">二星玩法直选缩水\n</string>
+    <string name="layout_fm0_tv_title_01">三星</string>
+    <string name="layout_fm0_tv_text_01">三星玩法直选缩水\n</string>
+    <string name="layout_fm0_tv_title_02">四星</string>
+    <string name="layout_fm0_tv_text_02">四星玩法直选缩水\n</string>
+    <string name="layout_fm0_tv_title_03">五星</string>
+    <string name="layout_fm0_tv_text_03">五星玩法直选缩水\n</string>
+    <string name="layout_fm0_tv_title_04">追号计划</string>
+    <string name="layout_fm0_tv_text_04">一种必赢的资金预投注方案</string>
+    <string name="layout_fm0_tv_title_05">成本速查</string>
+    <string name="layout_fm0_tv_text_05">三星复式投注成本-览表</string>
+    <string name="layout_fm0_tv_title_06">玩法说明</string>
+    <string name="layout_fm0_tv_text_06">时时彩玩法介绍\n</string>
+    <string name="layout_fm0_tv_title_07">蛋蛋趋势</string>
+    <string name="layout_fm0_tv_text_07">观看趋势图，知整体趋势</string>
+    <string name="act_plan_tv_zhjh"><u>什么是追号计划</u></string>
+    <string name="layout_fm0_tv_title_011">最新资讯</string>
+    <string name="layout_fm0_tv_text_011">关注最新资讯，掌握一手资料</string>
+</resources>

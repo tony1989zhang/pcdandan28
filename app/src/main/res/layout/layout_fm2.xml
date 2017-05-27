@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical">
+    <!--F4F5F9-->
+    <!--     <com.lvchehui.www.view.TitleView -->
+    <!--         android:id="@+id/title_view" -->
+    <!--         android:layout_width="match_parent" -->
+    <!--         android:layout_height="wrap_content" /> -->
+    <!--     android:layout_below="@id/title_view" -->
+    <LinearLayout
+        android:id="@+id/ll_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#eeffff"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="单号码"
+                android:textSize="@dimen/text_larght_size" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/text_default_color" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="冠亚和"
+                android:textSize="@dimen/text_larght_size" />
+        </LinearLayout>
+
+        b
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_hint_color" />
+
+        <include layout="@layout/f2_s_layout" />
+        <include layout="@layout/f3_t_layout"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_propt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="重新请求"
+        android:textColor="@color/text_default_color"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll_l"
+        android:layout_toEndOf="@+id/empty_propt"
+        android:fadingEdgeLength="0dip"
+        android:footerDividersEnabled="false"
+        android:overScrollMode="never" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

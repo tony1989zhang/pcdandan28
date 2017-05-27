@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:weightSum="9"
+    >
+    <TextView
+        android:id="@+id/tv_xh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:text="序号"
+        />
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_weight="2"
+        android:text="号码"
+        />
+
+    <TextView
+        android:id="@+id/tv_dxb"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="大小比"
+        android:layout_weight="2"
+        />
+    <TextView
+        android:id="@+id/tv_job"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:text="奇偶比"
+        />
+    <TextView
+        android:id="@+id/tv_heji"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:text="和值"
+        />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="horizontal"
+    android:weightSum="7">
+
+
+    <TextView
+        android:id="@+id/tv31"
+        style="@style/f2_three_title"
+        android:text="号码"
+         />
+
+    <View
+        style="@style/f2_three_line"
+        />
+
+    <TextView
+        android:id="@+id/tv32"
+        style="@style/f2_three_title"
+        android:text="出现\n占比"
+        />
+
+    <View
+        style="@style/f2_three_line"
+        />
+
+    <TextView
+        android:id="@+id/tv33"
+        style="@style/f2_three_title"
+        android:text="当前\n遗漏"
+        />
+
+    <View
+        style="@style/f2_three_line"
+        />
+
+    <TextView
+        android:id="@+id/tv34"
+        style="@style/f2_three_title"
+        android:text="上次\n遗漏"
+        />
+    <View
+        style="@style/f2_three_line"
+        />
+
+    <TextView
+        android:id="@+id/tv35"
+        style="@style/f2_three_title"
+        android:text="历史最大遗漏"
+        />
+    <View
+        style="@style/f2_three_line"
+        />
+
+    <TextView
+        android:id="@+id/tv36"
+        style="@style/f2_three_title"
+        android:text="平均\n遗漏"
+        />
+    <View
+        style="@style/f2_three_line"
+        />
+
+    <TextView
+        android:id="@+id/tv37"
+        style="@style/f2_three_title"
+        android:text="欲出\n机率"
+        />
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="main_color">#f0f0f0</color>
+    <color name="text_default_color">#4b4b4b</color>
+    <color name="text_hint_color">#969696</color>
+    <color name="text_default_yellow">#f0c21f</color>
+
+    <color name="line_hint_color">#cbcbcb</color>
+    <color name="title_bg_color">#00aaf2</color>
+    <!--fff6f6f6-->
+    <color name="item_list_press">#fff6f6f6</color>
+
+    <color name="swipe_refrsh_color1">#6a6aff</color>
+    <color name="swipe_refrsh_color2">#FF4081</color>
+    <color name="swipe_refrsh_color3">#f0c21f</color>
+    <color name="swipe_refrsh_color4">#969696</color>
+
+
+    <color name="spinner_color">#002e3c</color>
+    <color name="spinner_color_press">#004361</color>
+    <color name="title_column_color">#f8f8f8</color>
+    <color name="title_red">#e83536</color>
+    <color name="title_red_press">#33000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="line">#D3D3D3</color>
+
+    <color name="base_start_color_pressed">#fffcfcfc</color>
+    <color name="base_end_color_pressed">#ffd7d7d7</color>
+    <color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+
+    <!--=================================================================================================-->
+    <!--=============================================基本色系=============================================-->
+    <!--=================================================================================================-->
+    <color name="transparent">#00000000</color>
+
+    <color name="black">#000000</color>
+    <color name="black_alpha_25">#3F000000</color>
+    <color name="black_alpha_50">#7F000000</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="grey">#808080</color>
+    <color name="grey_light">#808080</color>
+    <color name="grey_dark">#808080</color>
+
+    <color name="red">#FF0000</color>
+    <color name="red_light">#FF0000</color>
+    <color name="red_dark">#FF0000</color>
+
+    <color name="orange">#FFA500</color>
+    <color name="orange_light">#FFA500</color>
+    <color name="orange_dark">#FFA500</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="yellow_light">#FFFF00</color>
+    <color name="yellow_dark">#FFFF00</color>
+
+    <color name="green">#33a39d</color>
+    <color name="green_light">#33a39d</color>
+    <color name="green_dark">#33a39d</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="blue_light">#0000FF</color>
+    <color name="blue_dark">#0000FF</color>
+
+    <color name="indigo">#4B0082</color>
+    <color name="indigo_light">#4B0082</color>
+    <color name="indigo_dark">#4B0082</color>
+
+    <color name="purple">#800080</color>
+    <color name="purple_light">#800080</color>
+    <color name="purple_dark">#800080</color>
+
+    <color name="brown">#A52A2A</color>
+    <color name="brown_light">#A52A2A</color>
+    <color name="brown_dark">#A52A2A</color>
+
+    <color name="lottery_title_color">#ff222222</color>
+    <color name="trend_list_odd">#ffedecea</color>
+    <color name="trend_list_even">#ffe8e4de</color>
+    <color name="trend_line_odd_bg">#bff6f5f4</color>
+    <color name="trend_ball_blue">#ff6daced</color>
+    <color name="trend_ball_red">#ffdc6161</color>
+    <color name="trend_x_ball_blue">#ff6daced</color>
+    <color name="trend_x_ball_red">#ffdc6161</color>
+    <color name="trend_x_ball_stroke">#ffe8e8e8</color>
+    <color name="trend_x_blue_text">#ff177ffc</color>
+    <color name="trend_x_red_text">#fff03d3d</color>
+    <color name="trend_xtitle_bg">#ffdad2ca</color>
+    <color name="trend_max_count_color">#ff5d8adf</color>
+    <color name="trend_max_lianchu_bg">#fffef8e3</color>
+    <color name="trend_max_lianchu_color">#ff80756e</color>
+    <color name="trend_max_yilou_color">#ffd76969</color>
+    <color name="trend_avg_yilou_color">#ff6fb949</color>
+    <color name="trend_avg_yilou_bg">#ffe9f1dc</color>
+    <color name="trend_divider">#ffeaeaea</color>
+    <color name="trend_qihao_text">#fff8f5f2</color>
+    <color name="trend_content_yilou">#ff9e9e9e</color>
+</resources>

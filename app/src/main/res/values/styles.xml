@@ -1,0 +1,389 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/AlertDialogStyle">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="title_bg">
+        <item name="android:background">@color/title_red</item>
+    </style>
+
+    <style name="title_back">
+        <item name="android:src">@mipmap/back_icon</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+    <style name="hometab_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+
+        <item name="android:background">@drawable/selector_btn_submit</item>
+    </style>
+
+    <style name="f2_smaill_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_default_color</item>
+        <item name="android:textSize">@dimen/text_default_size</item>
+    </style>
+
+    <style name="f2_three_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_default_size</item>
+    </style>
+
+    <style name="f2_item_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_default_color</item>
+        <item name="android:textSize">@dimen/text_smail_size</item>
+    </style>
+
+    <style name="f2_three_line">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@color/title_red</item>
+    </style>
+    <style name="splash_style" parent="@android:style/Theme.NoTitleBar">
+       <item name="android:windowBackground">@drawable/pk10_sp</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    -<style name="TagGroup">
+
+    <item name="android:layout_width">match_parent</item>
+
+    <item name="android:layout_height">wrap_content</item>
+
+    <item name="atg_isAppendMode">false</item>
+
+    <item name="atg_inputHint">@string/add_tag</item>
+
+    <item name="atg_borderColor">@color/title_red</item>
+
+    <item name="atg_textColor">@color/white</item>
+
+    <item name="atg_backgroundColor">@color/title_red</item>
+
+    <item name="atg_dashBorderColor">#AAAAAA</item>
+
+    <item name="atg_inputHintColor">#80000000</item>
+
+    <item name="atg_inputTextColor">#DE000000</item>
+
+    <item name="atg_checkedBorderColor">#49C120</item>
+
+    <item name="atg_checkedTextColor">#FFFFFF</item>
+
+    <item name="atg_checkedMarkerColor">#FFFFFF</item>
+
+    <item name="atg_checkedBackgroundColor">#49C120</item>
+
+    <item name="atg_pressedBackgroundColor">#EDEDED</item>
+
+    <item name="atg_borderStrokeWidth">0.5dp</item>
+
+    <item name="atg_textSize">13sp</item>
+
+    <item name="atg_horizontalSpacing">8dp</item>
+
+    <item name="atg_verticalSpacing">4dp</item>
+
+    <item name="atg_horizontalPadding">12dp</item>
+
+    <item name="atg_verticalPadding">3dp</item>
+
+</style>
+    -<style name="TagGroup3">
+
+    <item name="android:layout_width">match_parent</item>
+
+    <item name="android:layout_height">wrap_content</item>
+
+    <item name="atg_isAppendMode">false</item>
+
+    <item name="atg_inputHint">@string/add_tag</item>
+
+    <item name="atg_borderColor">@android:color/holo_blue_light</item>
+
+    <item name="atg_textColor">@color/white</item>
+
+    <item name="atg_backgroundColor">@android:color/holo_blue_light</item>
+
+    <item name="atg_dashBorderColor">#AAAAAA</item>
+
+    <item name="atg_inputHintColor">#80000000</item>
+
+    <item name="atg_inputTextColor">#DE000000</item>
+
+    <item name="atg_checkedBorderColor">#49C120</item>
+
+    <item name="atg_checkedTextColor">#FFFFFF</item>
+
+    <item name="atg_checkedMarkerColor">#FFFFFF</item>
+
+    <item name="atg_checkedBackgroundColor">#49C120</item>
+
+    <item name="atg_pressedBackgroundColor">#EDEDED</item>
+
+    <item name="atg_borderStrokeWidth">0.5dp</item>
+
+    <item name="atg_textSize">13sp</item>
+
+    <item name="atg_horizontalSpacing">8dp</item>
+
+    <item name="atg_verticalSpacing">4dp</item>
+
+    <item name="atg_horizontalPadding">12dp</item>
+
+    <item name="atg_verticalPadding">3dp</item>
+
+</style>
+
+    -<style name="TagGroup2">
+
+    <item name="android:layout_width">match_parent</item>
+
+    <item name="android:layout_height">wrap_content</item>
+
+    <item name="atg_isAppendMode">false</item>
+
+    <item name="atg_inputHint">@string/add_tag</item>
+
+    <item name="atg_borderColor">@android:color/holo_orange_dark</item>
+
+    <item name="atg_textColor">@color/white</item>
+
+    <item name="atg_backgroundColor">@android:color/holo_orange_dark</item>
+
+    <item name="atg_dashBorderColor">#AAAAAA</item>
+
+    <item name="atg_inputHintColor">#80000000</item>
+
+    <item name="atg_inputTextColor">#DE000000</item>
+
+    <item name="atg_checkedBorderColor">#49C120</item>
+
+    <item name="atg_checkedTextColor">#FFFFFF</item>
+
+    <item name="atg_checkedMarkerColor">#FFFFFF</item>
+
+    <item name="atg_checkedBackgroundColor">#49C120</item>
+
+    <item name="atg_pressedBackgroundColor">#EDEDED</item>
+
+    <item name="atg_borderStrokeWidth">0.5dp</item>
+
+    <item name="atg_textSize">13sp</item>
+
+    <item name="atg_horizontalSpacing">8dp</item>
+
+    <item name="atg_verticalSpacing">4dp</item>
+
+    <item name="atg_horizontalPadding">12dp</item>
+
+    <item name="atg_verticalPadding">3dp</item>
+
+</style>
+    -<style name="TagGroup.Small" parent="TagGroup">
+
+    <item name="atg_textSize">10sp</item>
+
+    <item name="atg_horizontalSpacing">6dp</item>
+
+    <item name="atg_verticalSpacing">3dp</item>
+
+    <item name="atg_horizontalPadding">8dp</item>
+
+    <item name="atg_verticalPadding">2dp</item>
+
+</style>
+
+
+    -<style name="TagGroup.Large" parent="TagGroup">
+
+    <item name="atg_borderStrokeWidth">0.7dp</item>
+
+    <item name="atg_textSize">15sp</item>
+
+    <item name="atg_horizontalSpacing">9dp</item>
+
+    <item name="atg_verticalSpacing">5dp</item>
+
+    <item name="atg_horizontalPadding">14dp</item>
+
+    <item name="atg_verticalPadding">4dp</item>
+
+</style>
+
+
+    -<style name="TagGroup.Beauty_Red" parent="TagGroup">
+
+    <item name="atg_borderColor">#FF3D7F</item>
+
+    <item name="atg_textColor">#FF3D7F</item>
+
+    <item name="atg_checkedBorderColor">#FF3D7F</item>
+
+    <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+
+</style>
+
+
+    -<style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+
+    <item name="atg_borderColor">#FF3D7F</item>
+
+    <item name="atg_textColor">#FFFFFF</item>
+
+    <item name="atg_backgroundColor">#FF3D7F</item>
+
+    <item name="atg_inputHintColor">#80FFFFFF</item>
+
+    <item name="atg_inputTextColor">#DEFFFFFF</item>
+
+    <item name="atg_checkedBorderColor">#FF3D7F</item>
+
+    <item name="atg_checkedTextColor">#FF3D7F</item>
+
+    <item name="atg_checkedMarkerColor">#FF3D7F</item>
+
+    <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+
+    <item name="atg_pressedBackgroundColor">#FF99B1</item>
+
+</style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="push_style">
+        <item name="android:hint">@string/style_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_alias">
+        <item name="android:hint">@string/alias_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_tag">
+        <item name="android:hint">@string/tag_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tv_twostart" >
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/selector_tv_tra</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="tv_title_twostart">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginLeft">5dp</item>
+
+    </style>
+    <style name="vg_twostart">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <!--<item name="com.demo.demo_2:isRadio">true</item>-->
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center</item>
+       <item name="com.xlidfwsscai525:singleLine">true</item>
+        <item name="com.xlidfwsscai525:tagMargin">5dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <style name="layout_fm0_ll">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/background_view_rounded_middle</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="layout_fm0_tv">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/text_default_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="layout_fm0_tv2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/line</item>
+        <item name="android:textSize">@dimen/text_smail_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="list_item_middle">
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/background_view_rounded_middle</item>
+    </style>
+</resources>

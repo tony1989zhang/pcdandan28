@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/f2_ll2"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    >
+    <TextView
+        android:id="@+id/t21"
+        style="@style/f2_smaill_title"
+        android:text="冠" />
+    <TextView
+        android:id="@+id/t22"
+        style="@style/f2_smaill_title"
+        android:text="亚" />
+    <TextView
+        android:id="@+id/t23"
+        style="@style/f2_smaill_title"
+        android:text="三" />
+    <TextView
+        android:id="@+id/t24"
+        style="@style/f2_smaill_title"
+        android:text="四" />
+    <TextView
+        android:id="@+id/t25"
+        style="@style/f2_smaill_title"
+        android:text="五" />
+    <TextView
+        android:id="@+id/t26"
+        style="@style/f2_smaill_title"
+        android:text="六" />
+    <TextView
+        android:id="@+id/t27"
+        style="@style/f2_smaill_title"
+        android:text="七" />
+    <TextView
+        android:id="@+id/t28"
+        style="@style/f2_smaill_title"
+        android:text="八" />
+    <TextView
+        android:id="@+id/t29"
+        style="@style/f2_smaill_title"
+        android:text="九" />
+    <TextView
+        android:id="@+id/t210"
+        style="@style/f2_smaill_title"
+        android:text="十" />
+</LinearLayout>

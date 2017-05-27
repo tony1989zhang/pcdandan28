@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="冠军"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_larght_size" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="亚军"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_larght_size" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第三名"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_larght_size" />
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第四名"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_larght_size" />
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第五名"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/text_larght_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/swipe_refrsh_color4"
+                android:gravity="center"
+                android:text="热"
+                android:textColor="@color/title_red"
+                android:textSize="@dimen/title_larght_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="温"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="@dimen/title_larght_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/swipe_refrsh_color4"
+                android:gravity="center"
+                android:text="冷"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="@dimen/title_larght_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line_hint_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <com.xlidfwsscai525.view.TagGroup
+                android:id="@+id/tag1"
+                style="@style/TagGroup"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@color/swipe_refrsh_color4"
+                android:padding="10dp"
+                android:layout_height="0dp" />
+
+            <com.xlidfwsscai525.view.TagGroup
+                android:id="@+id/tag2"
+                style="@style/TagGroup2"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <com.xlidfwsscai525.view.TagGroup
+                android:id="@+id/tag3"
+                style="@style/TagGroup3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@color/swipe_refrsh_color4"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_hint_color" />
+</LinearLayout>
